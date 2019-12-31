@@ -1,0 +1,29 @@
+.question {
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    background-color: lime;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+.choice-wrapper {
+    background-color: blue;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.choice {
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+.answer {
+    background-color: teal;
+    padding: 10px;
+
+}
