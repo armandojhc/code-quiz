@@ -1,3 +1,30 @@
+/* Nav Bar */
+
+.nav {
+    height: 100px;
+    background-color: #fff;
+}
+
+.nav-item {
+    margin-top: 30px;
+    margin-left: 0;
+    text-align: left;
+    
+}
+
+#viewHighScores {
+    margin-left: 0;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: indigo;
+}
+
+/*Questions*/
+
+
+
 .question {
     background-color: red;
     padding: 10px;
