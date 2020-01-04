@@ -13,23 +13,23 @@
     
 </head>
 <body>
-    <div class=container>
-            <ul class="nav justify-content-end">
+    <div class="container">
+            <ul class="nav justify-content-left">
                     <li class="nav-item">
                       <a id= "viewHighScores" class="nav-link active" href="#">View Highscores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Timer</a>
+                      <div id="timer" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Timer</div>
                     </li>
             </ul>
-    <div>
-        <div class="coding-quiz-header" style="text-align: center;">
+    <div id="start-quiz-message">
+        <div class="coding-quiz-header" style="text-align: center; margin-bottom: 20px; padding-left: 200px; padding-right: 200px;">
             <h1> Coding Quiz Challenge</h1>
             <div>
                 <p>Try to answer the following code-related questions within the time limit. Keep in mind that the incorrect answers will penalize your score time by ten seconds!</p>
             </div>
             <div>
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" style="background-color: indigo; border-color: indigo; ;">Start Quiz</button>
+                <button type="button" class="btn btn-primary" id="start-bt" data-toggle="button" aria-pressed="false" style="background-color: indigo; border-color: indigo; ;">Start Quiz</button>
             </div>
         </div>
     </div>
@@ -37,10 +37,6 @@
     </div>
 
     <div id="root">
-
-
-        
-
 
     </div>
     

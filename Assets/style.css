@@ -3,18 +3,22 @@
 .nav {
     height: 100px;
     background-color: #fff;
+    display: inline-flex;
+    width: 100%;
 }
-
+#timer {
+    position: relative;
+    float: right;
+}
 .nav-item {
     margin-top: 30px;
     margin-left: 0;
-    text-align: left;
-    
 }
 
 #viewHighScores {
     margin-left: 0;
-    font-weight: bold;
+    /* position: relative; */
+    float: left;
 }
 
 .nav-link {
@@ -26,27 +30,29 @@
 
 
 .question {
-    background-color: red;
+    /* background-color: red; */
     padding: 10px;
     margin-bottom: 10px;
 }
 
 .title {
-    background-color: lime;
+    /* background-color: lime; */
     padding: 5px;
     margin-bottom: 10px;
 
 }
 
-.choice-wrapper {
-    background-color: blue;
+.choices-wrapper {
+    /* background-color: blue; */
     padding: 5px;
     margin-bottom: 5px;
+    width: 100px;
 }
 
 .choice {
-    background-color: aqua;
+    clear: left;
     margin-bottom: 10px;
+    width: 100px;
 }
 
 .answer {
