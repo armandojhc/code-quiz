@@ -1,4 +1,4 @@
-var remainingTime = 15;
+var remainingTime = 75;
 
 var penaltyTime = 10;
 
