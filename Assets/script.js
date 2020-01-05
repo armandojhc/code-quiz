@@ -8,6 +8,7 @@ var correctAnswerPoints = 1;
 
 var currentQuestion = 0;
 
+var  endScoreMsg;
 
 $(document).ready(function() {
 
@@ -93,23 +94,31 @@ function showQuestion() {
         choicesWrapper.append(thirdChoice);
 
         var fourthChoice = $('<button onclick="answerQuestion(3)" type="button" class="btn btn-primary choice" data-toggle="button" aria-pressed="false" style="background-color: indigo; border-color: indigo; ;"></button>')
-        fourthChoice.text(questions[currentQuestion].choices[1]);
+        fourthChoice.text(questions[currentQuestion].choices[3]);
         choicesWrapper.append(fourthChoice);
 
         questionContainer.append(choicesWrapper);
+
+        // var correctAnswerMsg = $('<div class="answerMsg"></div>');
+        // correctAnswerMsg.text("Correct!");
+
+        // questionContainer.append(correctAnswerMsg);
 
         $("#root").append(questionContainer);
 }
 
 function startQuiz() {
-;
-    console.log("starting quiz");
+    
     $("#start-quiz-message").remove();
     setInterval(tickTimer, 1000);
     showQuestion(); 
+    // $(".answerMsg").remove();
+    
 
-    //Start the timer
 
+
+
+    //Start the time
     //Show the first question
 
 }
@@ -120,7 +129,10 @@ function tickTimer() {
     $("#timer").text(remainingTime);
     }
     else {
-        // End game quote
+        // End game
+    endScoreMsg.text("Your score is = " + remainingTime);
+
+        
     }
 
 }
@@ -129,7 +141,9 @@ function answerQuestion(selectedAnswer) {
 
     var selectedAnswerText = questions[currentQuestion].choices[selectedAnswer];
 
-    if (selectedAnswerText === questions[currentQuestion].answer){
+
+    if (selectedAnswerText === questions[currentQuestion].answer){ 
+        // $(".answerMsg").text(correctAnswerMsg);
         console.log("correct");
         currentQuestion++
         $(".question").remove();
@@ -139,6 +153,7 @@ function answerQuestion(selectedAnswer) {
         remainingTime-=penaltyTime
         if (remainingTime <= 0) {
             remainingTime= 0
+            endScoreMsg
             // End game quote
         }
         else {
@@ -147,3 +162,5 @@ function answerQuestion(selectedAnswer) {
         $("#timer").text(remainingTime);
     }
 }
+
+
